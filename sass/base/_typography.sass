@@ -22,6 +22,8 @@ body
         animation-delay: 1s
         animation-timing-function: ease
         backface-visibility: hidden
+        @include respond(tab-land)
+            font-size: 4rem
     &__secondary
         display: block
         font-weight: 100
@@ -34,6 +36,9 @@ body
         animation-delay: 1s
         backface-visibility: hidden
         margin-bottom: 6.5rem
+        @include respond(tab-land)
+            font-size: 3.5rem
+            margin-bottom: 3.5rem
 
 .title-secondary
     text-align: center
@@ -47,6 +52,8 @@ body
     color: transparent
     transition: all .4s
     backface-visibility: hidden
+    @include respond(tab-land)
+        font-size: 3rem
 
     &:hover
         transform: skewY(2deg) skewX(15deg) scale(1.1)
@@ -59,9 +66,13 @@ body
     letter-spacing: .2rem
     text-transform: uppercase
     font-weight: 700
+    @include respond(tab-land)
+        font-size: 1.8rem
 
 .paragraph
     font-size: $font-size-paragraph
     letter-spacing: .2rem
     line-height: 140%
     font-weight: 400
+    @include respond(tab-land)
+        font-size: 1.5rem

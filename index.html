@@ -10,12 +10,17 @@
 </head>
 <body>
     
+    <!-- THE WRAPPER FOR ALL OF THE SECTIONS ON THE WEBSITE -->
     <div class="container">
-
+        <!-- NAVIGATION THAT POPUPS ON CLICK -->
         <div class="navigation">
+            <!-- THIS THING IS CHECKING IF YOU CLICKED ON THE BUTTON -->
             <input type="checkbox" class="navigation__toggle" id="navi-toggle">
+            <!-- THE ACTUAL BUTTON WITH THE SPAN WHICH IS STYLED LIKE HAMBURGER -->
             <label for="navi-toggle" class="navigation__button"><span class="navigation__icon"></span></label>
+            <!-- GRADIENT BACKGROUND -->
             <div class="navigation__background"></div>
+            <!-- LIST THAT SHOWS ON BUTTON CLICK OR ALSO IN FOOTER -->
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="#" class="navigation__link">about us</a></li>
@@ -26,45 +31,64 @@
                 </ul>
             </nav>
         </div>
+
         <!-- HEADER -->
         <header class="header">
             <!-- ICON -->
             <img src="icons/Icon-logo.svg" alt="logo_balloons" class="header__logo">
+            <!-- THE MAIN SECTION OF THE WEBSITE -->
             <div class="header__box">
+                <!-- THERE IS TITLE -->
                 <h1 class="title-first">
                     <span class="title-first__main">Hot Air Balloon Tours</span>
                     <span class="title-first__secondary">an unforgettable adventure awaits you</span>
                 </h1>
+                <!-- BUTTON THAT I COPYED LIKE 20 TIMES, THERES A LOT OF EM ON THE WEBSITE -->
                 <a href="#" class="btn btn_animated">our catalog</a>
             </div>
         </header>
 
+        <!-- "MAIN" IS THE CONTAINER FOR ALL THE CONTENT EXCEPT - HEADER, FOOTER -->
         <main>
+            <!-- FIRST SECTION -->
             <section class="section-about">
+                <!-- THIS DIV CENTERS TEXT IN THE MIDDLE OF PAGE, THE MODIFICATOR FOR MARGINS -->
                 <div class="text-align-center margin-bottom-80px">
+                    <!--  TITLE THAT I REUSED AS MUCH AS BUTTON -->
                     <h2 class="title-secondary">
                         unbeliveable feeling of freedom
                     </h2>
                 </div>
 
+                <!-- "ROW" IS CONTAINER THAT I WROTED IN THE BOTTOM OF HTML DOCUMENT AND CREATED A CSS GRID BY MYSELF -->
                 <div class="row">
+                    
+                    <!-- COL - IS HOW MUCH THE DIV WOULD ATE THE SPACE IN YOUR PAGE, FOR THIS EXAMPLE IS 1 OF 2, LIKE 50\50, ONE DIV ON THE RIGHT SIDE OF THE PAGE, THE SECOND IS IN THE RIGHT SIDE -->
+                    <!-- THIS DIV COMES FIRST SO IT WOULD BE ON THE LEFT SIDE, WOULD INCLUDE - MAIN TITLE OF THE SECTION, A LITTLE DESCRIPTION AND BUTTON -->
                     <div class="col-1-of-2">
+                        <!-- ALSO TITLE THAT HAS BEEN REUSED, HAS THE SKEWY ANIMATION AND SHADOWS -->
                         <h3 class="title-third margin-bottom-10px">ALLOW A ADVENTURE FOR YOURSELF</h3>
+                        <!-- LITTLE DESCRIPTION IS GONNA BE HERE -->
                         <p class="paragraph margin-bottom-30px">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, a ipsa debitis velit unde facilis et, ratione doloremque hic at deleniti nemo mollitia eligendi voluptate? Neque esse laborum totam debitis.
                         </p>
-
+                        <!-- TITLE -->
                         <h3 class="title-third margin-bottom-10px">UP 6000 METERS ABOVE SEA LEVEL</h3>
+                        <!-- AGAIN A LITTLE DESC. -->
                         <p class="paragraph margin-bottom-50px">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, a ipsa debitis velit unde facilis et, ratione doloremque hic at deleniti nemo mollitia eligendi voluptate? Neque esse laborum totam debitis.
                         </p>
-
+                        <!-- BUTTON, &rarr; is used to draw a right arrow -->
                         <a href="#" class="btn-text">Learn More &rarr;</a>
                     </div>
 
-
+                    <!-- SO IF YOU READ THE PAST TEXT ABOUT COL YOU WOULD KNOW WHERE THIS DIV WOULD APPEAR -->
+                    <!-- IF NOT - THIS THING GONNA BE ON THE RIGHT SIDE OF THE PAGE -->
                     <div class="col-1-of-2">
+                        <!-- COMPOSITION IS THE DIV FOR ALL IMAGES THAT YOU CAN SEE ON THE WEBSITE IN THIS SECTION -->
                         <div class="composition">
+                            <!-- THERE IS CLASS COMPOSITION PHOTO TO STYLE ALL THE PHOTOS -->
+                            <!-- THE MODIFICATOR _n1,_n2,_n3 USED TO SET FOR EACH A Z-INDEX AND THEIR OWN POSITION -->
                             <img src="img/photo-ballons-1.jpg" alt="" class="composition__photo composition__photo_n1">
                             <img src="img/photo-ballons-2.jpg" alt="" class="composition__photo composition__photo_n2">
                             <img src="img/photo-ballons-3.jpg" alt="" class="composition__photo composition__photo_n3">
