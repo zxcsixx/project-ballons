@@ -87,6 +87,11 @@ body {
   padding: 5rem;
   background: #fff;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 2rem;
+  }
+}
 
 .title-first {
   color: #fff;
